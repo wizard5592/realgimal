@@ -2,7 +2,7 @@ let system;
 function setup() {
   createCanvas(600, 600);
   system = new ParticleSystem(createVector(width/2, height/2));
-  setInterval(add,5000);
+  //setInterval(add,5000);
   system.addParticle();
 }
 
