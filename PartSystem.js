@@ -7,7 +7,10 @@ class ParticleSystem{
   addParticle(){
     this.particles.push(new Particle(this.origin));
   }
-  
+  removeParticle(){
+    for(var i = 0; i < this.particles.length; i++){
+      this.particles.pop();
+    }
  
   }
   run(){
@@ -19,3 +22,4 @@ class ParticleSystem{
       }
     }
   }
+}
