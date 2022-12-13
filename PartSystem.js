@@ -8,10 +8,6 @@ class ParticleSystem{
     this.particles.push(new Particle(this.origin));
     print('origin : ', this.origin);
   } 
-  addParticle1(x,y){
-    this.particle.push(new Particle(this.x,this.y));
-  }
-  
   
   removeParticle(){
     for(var i = 0; i < this.particles.length + 1; i++){
