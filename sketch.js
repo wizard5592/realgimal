@@ -21,6 +21,7 @@ function keyPressed(){
   if(keyCode == 32){ 
     for(let i=0; i <10; i++){
     system.removeParticle();
+    system.origin = createVector(width/2, height/2);
     system.addParticle();
     }
   }
