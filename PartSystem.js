@@ -7,11 +7,11 @@ class ParticleSystem{
   addParticle(){
     this.particles.push(new Particle(this.origin));
   }
+  
   removeParticle(){
-    for(var i = 0; i < this.particles.length; i++){
+    for(var i = 0; i < this.particles.length + 1; i++){
       this.particles.pop();
     }
- 
   }
   run(){
     for (let i = this.particles.length-1; i >= 0; i--) {

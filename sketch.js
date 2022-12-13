@@ -2,14 +2,14 @@ let system;
 function setup() {
   createCanvas(600, 600);
   system = new ParticleSystem(createVector(width/2, height/2));
-  //setInterval(add,5000);
+  setInterval(add,5000);
   system.addParticle();
 }
 
 function draw() {
   background(0);
   textSize(32);
-  text("공이 벽에 튕기면 복제됩니다",80, height / 2);
+  text("공이 벽에 튕기면 복제됩니다",120, height / 2);
   system.run();
 }
 
@@ -19,7 +19,9 @@ function add(){
 
 function keyPressed(){
   if(keyCode == 32){ 
+    for(let i=0; i <10; i++){
     system.removeParticle();
     system.addParticle();
+    }
   }
 } 
