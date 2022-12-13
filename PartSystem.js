@@ -8,9 +8,8 @@ class ParticleSystem{
     this.particles.push(new Particle(this.origin,0));
   }
   
-  addParticle(x,y){
-    this.vel = createVector(x,y);
-    this.particles.push(new Particle(this.origin, this.vel.x,this.vel.y, 1));
+  addParticle(){
+    this.particles.push(new Particle(this.origin, 1));
   }
                      
               
