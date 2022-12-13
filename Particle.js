@@ -30,26 +30,26 @@ class Particle {
 
   edge(){
     if(this.pos.y > height-10){
-      system.origin = createVector(this.pos.x, this.pos.y - 1 );
+      system.origin = createVector(this.pos.x, this.pos.y - 10);
       print("1",this.ckvel);
       this.vel.y = this.vel.y * -1;  
       system.addParticle(this.vel.x,this.vel.y);
       this.count--;
     }  
      if( this.pos.y < 10){
-      system.origin = createVector(this.pos.x, this.pos.y + 1);
+      system.origin = createVector(this.pos.x, this.pos.y + 10);
       this.vel.y = this.vel.y * -1;  
       system.addParticle(this.vel.x,this.vel.y);
       this.count--;
     }  
     if(this.pos.x > width - 10){
-      system.origin = createVector(this.pos.x - 1, this.pos.y);
+      system.origin = createVector(this.pos.x - 10, this.pos.y);
       this.vel.x = this.vel.x * -1; 
       system.addParticle(this.vel.x,this.vel.y);
       this.count--;
     } 
     if(this.pos.x < 10){
-      system.origin = createVector(this.pos.x + 1, this.pos.y);
+      system.origin = createVector(this.pos.x + 10, this.pos.y);
       this.vel.x = this.vel.x * -1; 
       system.addParticle(this.vel.x,this.vel.y);
       this.count--;
