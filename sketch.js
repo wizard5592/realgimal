@@ -3,7 +3,7 @@ function setup() {
   createCanvas(600, 600);
   system = new ParticleSystem(createVector(width/2, height/2));
   setInterval(add,5000);
-  system.addParticle();
+  system.addParticlefirst();
 }
 
 function draw() {
@@ -22,7 +22,7 @@ function keyPressed(){
     for(let i=0; i <10; i++){
     system.removeParticle();
     system.origin = createVector(width/2, height/2);
-    system.addParticle();
+    system.addParticlefirst();
     }
   }
 } 
